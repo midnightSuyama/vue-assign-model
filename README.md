@@ -1,5 +1,6 @@
 # vue-assign-model
 
+[![npm version](https://badge.fury.io/js/vue-assign-model.svg)](https://badge.fury.io/js/vue-assign-model)
 [![CircleCI](https://circleci.com/gh/midnightSuyama/vue-assign-model.svg?style=shield)](https://circleci.com/gh/midnightSuyama/vue-assign-model)
 
 Automatically assign elements value to model for Vue.js

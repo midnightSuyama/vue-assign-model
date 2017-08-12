@@ -1,7 +1,7 @@
 {
   "name": "vue-assign-model",
   "version": "1.0.0",
-  "description": "Assign the value of html to vue model",
+  "description": "Automatically assign elements value to model for Vue.js",
   "main": "dist/vue-assign-model.js",
   "repository": "https://github.com/midnightSuyama/vue-assign-model",
   "author": "midnightSuyama",
