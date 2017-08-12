@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script src="../../node_modules/vue/dist/vue.min.js"></script>
+    <script src="../../dist/vue-assign-model.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <input type="text" id="text" value="edit me" v-model="text">
+
+      <textarea id="textarea" v-model="textarea">add multiple lines</textarea>
+
+      <input type="checkbox" id="checkbox" value="1" v-model="checked" checked>
+
+      <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+      <label for="jack">Jack</label>
+      <input type="checkbox" id="john" value="John" v-model="checkedNames">
+      <label for="john">John</label>
+      <input type="checkbox" id="mike" value="Mike" v-model="checkedNames" checked>
+      <label for="mike">Mike</label>
+
+      <input type="radio" id="one" value="One" v-model="picked">
+      <label for="one">One</label>
+      <input type="radio" id="two" value="Two" v-model="picked" checked>
+      <label for="two">Two</label>
+
+      <select id="select" v-model="selected">
+        <option value="" disabled>Please select one</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C" selected>C</option>
+      </select>
+
+      <select id="select-multiple" v-model="selectedMultiple" multiple>
+        <option value="A">A</option>
+        <option value="B" selected>ZZZ</option>
+        <option value="C" selected>C</option>
+      </select>
+
+      <ul id="items" data-vue-model="{&quot;items&quot;: [&quot;Foo&quot;, &quot;Bar&quot;]}">
+        <li v-for="item in items">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      Vue.use(VueAssignModel)
+      var vm = new Vue({el: '#app'})
+    </script>
+  </body>
+</html>
