@@ -32,7 +32,7 @@ Before Vue rendering, `value`, `checked` or `selected` attributes of elements wi
 ```javascript
 /* assigned model */
 data: {
-  text: 'edit me'
+  text: "edit me"
 }
 ```
 
@@ -46,7 +46,7 @@ data: {
 ```javascript
 /* assigned model */
 data: {
-  textarea: 'add multiple lines'
+  textarea: "add multiple lines"
 }
 ```
 
